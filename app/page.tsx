@@ -13,7 +13,7 @@ export default function Home() {
               <h1 className="font-bold text-7xl mb-12">
                 Hi there! I'm Szvetlin.
               </h1>
-              <div className="mr-4">
+              <div className="mr-8">
                 <p className="mb-4 text-justify">
                   I'm passionate about developing applications that address
                   real-world challenges, making life easier for myself and
