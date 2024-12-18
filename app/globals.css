@@ -17,6 +17,7 @@
   --text: #ffffff;
   --primary: #ff5277;
   --secondary: #43a9a3;
+  --tertiary: #ffff66;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +39,18 @@ h4,
 h5,
 h6 {
   font-family: var(--font-cormorant), serif;
+}
+
+em {
+  font-style: normal;
+  color: var(--primary);
+  text-shadow: 0 0 5px var(--primary);
+}
+
+em.highlight {
+  font-style: normal;
+  color: var(--tertiary);
+  text-shadow: 0 0 5px var(--tertiary);
 }
 
 @layer base {

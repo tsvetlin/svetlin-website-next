@@ -13,7 +13,7 @@ export default function SocialIcon({
     <li>
       <a href={href} target="_blank" rel="noopener noreferrer">
         <Image
-          className="dark:invert mr-8"
+          className="dark:invert mr-8 hover:animate-rocking"
           src={src}
           alt={alt}
           width={40}

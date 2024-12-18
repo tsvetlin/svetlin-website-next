@@ -4,8 +4,8 @@ import ListItem from './ListItem';
 export default function Header() {
   return (
     <header className="flex flex-row justify-between h-20 content-center max-w-6xl m-auto mb-12">
-      <h1 className="content-center text-[--primary] font-bold">
-        Szvetlin Tanyi
+      <h1 className="content-center font-bold">
+        <em>Szvetlin Tanyi</em>
       </h1>
       <nav className="flex">
         <List>
