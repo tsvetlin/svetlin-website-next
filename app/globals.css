@@ -2,20 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .underline-effect {
+    @apply relative p-0;
+  }
+
+  .underline-effect::after {
+    @apply content-[''] absolute w-full h-1 left-0 bottom-[-8px] bg-[--primary] origin-bottom-right hover:origin-bottom-left scale-x-0 hover:scale-x-100 transition-transform duration-300;
+  }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0e141b;
+  --text: #ffffff;
+  --primary: #ff5277;
+  --secondary: #43a9a3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0e141b;
   }
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-cormorant), serif;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
 }
