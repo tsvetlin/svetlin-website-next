@@ -1,10 +1,12 @@
+import ArrowIcon from './ArrowIcon';
+
 export type Experience = {
   from: string;
   to: string;
   company: string;
   companyUrl: string;
   jobTitle: string;
-  description: string;
+  description: string | React.ReactNode;
   technologies: string[];
 };
 
@@ -21,18 +23,18 @@ export default function ExperienceCard({
         </p>
       </div>
       <div className="flex flex-col col-span-5 p-4">
-        <h1 className="font-bold text-3xl mb-4 group-hover:text-primary">
-          {`${experience.jobTitle} · `}
-          <a
-            className="group-hover:text-primary"
-            href={experience.companyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${experience.jobTitle} at ${experience.company} (opens in a new tab)`}
-          >
-            <span>{`${experience.company} `}</span>
-          </a>
-        </h1>
+        <a
+          className="font-cormorant font-bold text-3xl mb-4 group-hover:text-primary"
+          href={experience.companyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${experience.jobTitle} at ${experience.company} (opens in a new tab)`}
+        >
+          <div className="flex items-center">
+            {`${experience.jobTitle} · ${experience.company}`}
+            <ArrowIcon />
+          </div>
+        </a>
         <p className="text-gray-400 text-justify">{experience.description}</p>
         <div className="flex flex-row mt-4 flex-wrap">
           {experience.technologies.map((technology) => (

@@ -30,7 +30,7 @@ export default function ExperienceSection() {
       companyUrl: 'https://www.artera.io/',
       jobTitle: 'Software Engineer',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ducimus ratione harum, modi nihil porro? Minus officia vero voluptatem et? Eum aspernatur cum voluptatum deleniti totam repellat porro. Quidem, eligendi!',
+        'Worked on a healthcare communication platform that enabled healthcare providers to easily communicate with their patients. Worked closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices. Driven frontend testing efforts, including unit and integration tests, to ensure the quality of the product.',
       technologies: [
         'TypeScript',
         'React',
@@ -48,8 +48,41 @@ export default function ExperienceSection() {
       company: 'AITIA',
       companyUrl: 'https://www.aitia.ai/',
       jobTitle: 'Software Engineer',
-      description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos explicabo architecto at! Sapiente vero temporibus rem eaque laudantium vel?',
+      description: (
+        <>
+          Worked on creating JavaScript based applications and websites in the
+          field of Industrial IoT, Service Oriented Architectures and Management
+          Solutions. I have been actively involved in European projects (
+          <a
+            href="https://productive40.eu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-tertiary"
+          >
+            Productive4.0
+          </a>
+          ,{' '}
+          <a
+            href="https://tools.arrowhead.eu/home/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-tertiary"
+          >
+            Arrowhead Tools
+          </a>
+          ) either as Work Package leader or Task Leader and I was a member of
+          the Management Committee. I also oversaw the development of the{' '}
+          <a
+            href="https://arrowhead.eu/eclipse-arrowhead-2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-tertiary"
+          >
+            Eclipse Arrowhead Framework
+          </a>
+          .
+        </>
+      ),
       technologies: [
         'JavaScript',
         'TypeScript',
@@ -69,7 +102,7 @@ export default function ExperienceSection() {
       companyUrl: 'https://www.tappointment.com/',
       jobTitle: 'Software Engineer',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quod. Quisquam, molestias. Quam, quibusdam. Quisquam, molestias. Quam, quibusdam.',
+        "Worked on multiple Android applications, mainly focusing on the company's mobile application that enabled users to book appointments with local businesses. Later worked on developing websites, and various web applications. Worked closely with the product team to define the product roadmap and prioritize features.",
       technologies: [
         'Java',
         'Android',
@@ -79,6 +112,7 @@ export default function ExperienceSection() {
         'Node.js',
         'React',
         'Docker',
+        'AWS',
       ],
     },
   ];

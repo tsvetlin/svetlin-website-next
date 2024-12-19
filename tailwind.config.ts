@@ -26,6 +26,9 @@ export default {
       animation: {
         rocking: 'rocking 1s ease-in-out infinite',
       },
+      fontFamily: {
+        cormorant: ['Cormorant', 'serif'],
+      },
     },
   },
   plugins: [],
