@@ -13,11 +13,11 @@
 }
 
 :root {
-  --background: #0e141b;
-  --text: #ffffff;
-  --primary: #ff5277;
-  --secondary: #43a9a3;
-  --tertiary: #ffff66;
+  --background: 14 20 27;
+  --text: 255 255 255;
+  --primary: 255 82 119;
+  --secondary: 67 169 169;
+  --tertiary: 255 255 102;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,8 +27,8 @@
 }
 
 body {
-  color: var(--text);
-  background: var(--background);
+  color: rgb(var(--text));
+  background: rgb(var(--background));
   font-family: Inter, Helvetica, sans-serif;
 }
 
@@ -43,14 +43,14 @@ h6 {
 
 em {
   font-style: normal;
-  color: var(--primary);
-  text-shadow: 0 0 5px var(--primary);
+  color: rgb(var(--primary));
+  text-shadow: 0 0 5px rgb(var(--primary));
 }
 
 em.highlight {
   font-style: normal;
-  color: var(--tertiary);
-  text-shadow: 0 0 5px var(--tertiary);
+  color: rgb(var(--tertiary));
+  text-shadow: 0 0 5px rgb(var(--tertiary));
 }
 
 @layer base {

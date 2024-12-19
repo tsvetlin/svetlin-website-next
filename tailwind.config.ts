@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        background: 'rgb(var(--background))',
+        text: 'rgb(var(--text))',
+        primary: 'rgb(var(--primary))',
+        secondary: 'rgb(var(--secondary))',
+        accent: 'rgb(var(--accent))',
+        tertiary: 'rgb(var(--tertiary))',
       },
       keyframes: {
         rocking: {
