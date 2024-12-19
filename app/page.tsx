@@ -40,12 +40,13 @@ export default function Home() {
                 <SocialList />
               </div>
             </div>
+
             <Image
-              className="rounded-lg"
+              className="rounded-lg hover:scale-110 transition-all duration-500"
               src="/prof.jpeg"
               alt="Szvetlin"
               width={334}
-              height={500}
+              height={400}
               priority
             />
           </div>
