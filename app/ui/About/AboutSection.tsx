@@ -5,7 +5,7 @@ import LongDescription from './LongDescription';
 
 export default function AboutSection() {
   return (
-    <section className="max-w-5xl m-auto">
+    <section id="about" className="max-w-5xl m-auto">
       <div className="flex flex-row mb-8">
         <div>
           <h1 className="font-bold text-7xl mb-12">

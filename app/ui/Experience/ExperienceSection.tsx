@@ -14,11 +14,11 @@ export default function ExperienceSection() {
       technologies: [
         'Ruby',
         'Ruby on Rails',
+        'TypeScript',
         'NestJS',
+        'React',
         'Docker',
         'AWS',
-        'React',
-        'TypeScript',
         'GraphQL',
         'PostgreSQL',
       ],
@@ -123,8 +123,8 @@ export default function ExperienceSection() {
     },
   ];
   return (
-    <section className="max-w-5xl m-auto mt-16">
-      Experience
+    <section id="experience" className="max-w-5xl m-auto mt-16">
+      <h1 className="text-4xl font-bold mb-4">Experience</h1>
       {experiences.map((experience) => (
         <ExperienceCard key={experience.company} experience={experience} />
       ))}

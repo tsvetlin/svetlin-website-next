@@ -11,6 +11,9 @@
     @apply content-[''] absolute w-full h-1 left-0 bottom-[-8px] bg-[--primary] origin-bottom-right hover:origin-bottom-left scale-x-0 hover:scale-x-100 transition-transform duration-300;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: 14 20 27;

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function ListItem({
   href,
   text,
@@ -7,9 +9,9 @@ export default function ListItem({
 }) {
   return (
     <li className="content-center ml-8">
-      <a className="underline-effect" href={href}>
+      <Link className="underline-effect" href={href}>
         {text}
-      </a>
+      </Link>
     </li>
   );
 }
