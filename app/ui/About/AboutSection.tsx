@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import ShortDescription from './ShortDescription';
-import SocialList from './SocialList';
+import SocialList from '../Socials/SocialList';
 import LongDescription from './LongDescription';
 
 export default function AboutSection() {
@@ -12,7 +12,7 @@ export default function AboutSection() {
             Hi there! I&apos;m Szvetlin.
           </h1>
           <ShortDescription />
-          <div>
+          <div className="mr-8">
             <SocialList />
           </div>
         </div>
