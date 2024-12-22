@@ -17,9 +17,9 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end rounded-lg  overflow-hidden items-center">
           <Image
-            className="rounded-lg hover:scale-110 transition-all duration-500"
+            className="rounded-lg hover:scale-110 transition-all duration-500 object-contain"
             src="/prof.jpeg"
             alt="Szvetlin"
             width={334}
