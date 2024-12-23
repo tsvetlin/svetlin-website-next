@@ -123,8 +123,8 @@ export default function ExperienceSection() {
     },
   ];
   return (
-    <section id="experience" className="max-w-5xl m-auto mt-16">
-      <h1 className="text-4xl font-bold mb-4">Experience</h1>
+    <section id="experience" className="max-w-5xl m-auto mt-0 md:mt-16">
+      <h1 className="p-4 md:p-0 text-4xl font-bold mb-4">Experience</h1>
       {experiences.map((experience) => (
         <ExperienceCard key={experience.company} experience={experience} />
       ))}

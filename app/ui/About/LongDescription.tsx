@@ -1,6 +1,6 @@
 export default function LongDescription() {
   return (
-    <div>
+    <div className="p-4 md:p-0">
       <p className="text-justify mb-4">
         As a kid, I loved tinkering with computers, but everything changed in
         2010 when I got my first Android phone. Discovering I could create

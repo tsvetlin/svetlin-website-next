@@ -5,7 +5,7 @@ export default function PersonalSection() {
     {
       title: 'Family',
       description:
-        "When I'm not buried in code or tending to my pepper plants, I'm spending time with my family and my amazing and wife. Our daughter keeps me on my toes with her brilliant questions, while our little son reminds me daily that sleep is an optional part of life. Together, we are the perfect team, turning our house into a lively mix of laughs and chaos.",
+        "When I'm not buried in code or tending to my pepper plants, I'm spending time with my family and my amazing wife. Our daughter keeps me on my toes with her brilliant questions, while our little son reminds me daily that sleep is an optional part of life. Together, we are the perfect team, turning our house into a lively mix of laughs and chaos.",
     },
     {
       title: 'Gym',
@@ -46,12 +46,12 @@ export default function PersonalSection() {
     },
   ];
   return (
-    <section id="personal" className="max-w-5xl m-auto mt-16">
-      <h1 className="text-4xl font-bold mb-8">Personal</h1>
-      <h2 className="text-3xl mb-4">
+    <section id="personal" className="max-w-5xl m-auto mt-0 md:mt-16">
+      <h1 className="p-4 md:p-0 text-4xl font-bold mb-8">Personal</h1>
+      <h2 className="p-4 md:p-0 text-3xl mb-4">
         What am I doing when I am not tinkering with computers?
       </h2>
-      <ul>
+      <ul className="p-4 md:p-0">
         {personal.map((item) => (
           <PersonalListItem key={item.title} personal={item} />
         ))}

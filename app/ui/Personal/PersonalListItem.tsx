@@ -19,9 +19,14 @@ export default function PersonalListItem({
       <h3 className="text-2xl font-bold mb-4">{title}</h3>
       <p className="mb-4 text-gray-400">{description}</p>
       {images && (
-        <div className="flex flex-row items-center justify-around">
-          {images.map((image) => (
-            <div className="h-min overflow-hidden rounded-lg" key={image.src}>
+        <div className="flex flex-col md:flex-row items-center justify-around">
+          {images.map((image, index) => (
+            <div
+              className={`h-min overflow-hidden rounded-lg ${
+                index !== 0 ? 'mt-4' : ''
+              }`}
+              key={image.src}
+            >
               <Image
                 key={image.src}
                 src={image.src}

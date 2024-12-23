@@ -1,6 +1,6 @@
 export default function ShortDescription() {
   return (
-    <div className="mr-8">
+    <div className="md:mr-8 p-4 md:p-0">
       <p className="mb-4 text-justify">
         I&apos;m passionate about developing applications that address
         real-world challenges, making life easier for myself and others. With a

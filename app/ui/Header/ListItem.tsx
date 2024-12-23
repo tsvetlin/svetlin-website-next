@@ -8,7 +8,7 @@ export default function ListItem({
   text: string;
 }) {
   return (
-    <li className="content-center ml-8">
+    <li className="content-center lg:ml-8">
       <Link className="underline-effect" href={href}>
         {text}
       </Link>
