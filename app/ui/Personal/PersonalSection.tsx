@@ -48,13 +48,13 @@ export default function PersonalSection() {
   return (
     <section
       id="personal"
-      className="max-w-5xl m-auto mt-0 md:mt-16 sm:p-6 md:p-8 lg:p-0"
+      className="max-w-5xl m-auto mt-0 lg:mt-16 sm:p-6 md:p-8 lg:p-0"
     >
       <h1 className="p-4 md:p-0 text-4xl font-bold md:mb-4">Personal</h1>
       <h2 className="p-4 md:p-0 text-3xl mb-4">
         What am I doing when I am not tinkering with computers?
       </h2>
-      <ul className="p-4 md:p-0">
+      <ul className="p-4">
         {personal.map((item) => (
           <PersonalListItem key={item.title} personal={item} />
         ))}

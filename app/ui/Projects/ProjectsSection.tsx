@@ -54,7 +54,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="max-w-5xl m-auto md:mt-16 sm:p-6 md:p-8 lg:p-0"
+      className="max-w-5xl m-auto lg:mt-16 sm:p-6 md:p-8 lg:p-0"
     >
       <h1 className="p-4 md:p-0 text-4xl font-bold md:mb-4">Projects</h1>
       {projects.map((project) => (

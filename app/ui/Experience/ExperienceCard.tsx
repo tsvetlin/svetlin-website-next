@@ -17,13 +17,13 @@ export default function ExperienceCard({
 }) {
   return (
     <div className="group grid grid-cols-6 mb-8 rounded-lg hover:bg-slate-700/50 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
-      <div className="hidden md:col-span-1 mr-4 col-span-0 p-4">
+      <div className="hidden md:block md:col-span-1 mr-4 col-span-0 p-4">
         <p className="text-nowrap">
           {experience.from} - {experience.to}
         </p>
       </div>
       <div className="flex flex-col col-span-6 md:col-span-5 p-4">
-        <p className="text-nowrap">
+        <p className="block md:hidden text-nowrap">
           {experience.from} - {experience.to}
         </p>
         <a

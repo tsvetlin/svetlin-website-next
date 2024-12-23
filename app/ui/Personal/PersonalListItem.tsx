@@ -23,7 +23,7 @@ export default function PersonalListItem({
           {images.map((image, index) => (
             <div
               className={`h-min overflow-hidden rounded-lg ${
-                index !== 0 ? 'mt-4' : ''
+                index !== 0 ? 'mt-4 md:mt-0 md:ml-4' : ''
               }`}
               key={image.src}
             >

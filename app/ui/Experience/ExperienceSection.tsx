@@ -125,7 +125,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="max-w-5xl m-auto mt-0 md:mt-16 sm:p-6 md:p-8 lg:p-0"
+      className="max-w-5xl m-auto mt-0 lg:mt-16 sm:p-6 md:p-8 lg:p-0"
     >
       <h1 className="p-4 md:p-0 text-4xl font-bold mb-4">Experience</h1>
       {experiences.map((experience) => (
