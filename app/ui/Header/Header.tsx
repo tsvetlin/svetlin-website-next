@@ -3,7 +3,7 @@ import ListItem from './ListItem';
 
 export default function Header() {
   return (
-    <header className="flex flex-col md:flex-row justify-between md:h-20 content-center items-center max-w-6xl m-auto mb-8 mt-8 md:mb-12 md:p-8">
+    <header className="flex flex-col md:flex-row justify-between md:h-20 content-center items-center max-w-6xl m-auto mb-8 mt-8 md:mb-12 md:p-8 lg:p-0">
       <h1 className="content-center font-bold hidden md:block text-norwrap">
         <em>Szvetlin Tanyi</em>
       </h1>
