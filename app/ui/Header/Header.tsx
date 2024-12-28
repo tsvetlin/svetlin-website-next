@@ -9,10 +9,10 @@ export default function Header() {
       </h1>
       <nav className="flex sm:mt-4 md:mt-0 md:ml-4 w-full md:w-auto">
         <List>
-          <ListItem href="#about" text="About" />
-          <ListItem href="#experience" text="Experience" />
-          <ListItem href="#projects" text="Projects" />
-          <ListItem href="#personal" text="Personal" />
+          <ListItem href="/#about" text="About" />
+          <ListItem href="/#experience" text="Experience" />
+          <ListItem href="/#projects" text="Projects" />
+          <ListItem href="/#personal" text="Personal" />
         </List>
       </nav>
     </header>
