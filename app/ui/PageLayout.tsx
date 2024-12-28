@@ -9,7 +9,7 @@ export default function PageLayout({
   return (
     <div>
       <Header />
-      <main>{children}</main>
+      <main className="md:mr-8 p-4 md:p-0">{children}</main>
       <Footer />
     </div>
   );

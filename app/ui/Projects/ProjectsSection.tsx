@@ -7,7 +7,7 @@ export default function ProjectsSection() {
       title: 'Gastro Captain HTMX',
       description:
         'A project to explore the functionality of BunJS and HTMX. It is a meal planner application that enables users to generate a weekly meal plan based on preferred ingredients and macro nutrient goals.',
-      image: '/gastro-htmx.png',
+      image: '/gastro-htmx-1.png',
       technologies: ['BunJS', 'ElysiaJS', 'Turso', 'HTMX', 'SQLite'],
       url: '/gastro-captain-htmx',
     },
