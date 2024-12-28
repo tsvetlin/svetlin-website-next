@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import ArrowIcon from '../Experience/ArrowIcon';
 export type Project = {
   title: string;
@@ -10,6 +11,31 @@ export type Project = {
 };
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const linkContent = (
+    <div className="flex items-center">
+      {`${project.title}`}
+      <ArrowIcon />
+    </div>
+  );
+  const link = project.url.startsWith('http') ? (
+    <a
+      className="font-cormorant font-bold text-3xl mb-4 group-hover:text-primary"
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={project.title}
+    >
+      {linkContent}
+    </a>
+  ) : (
+    <Link
+      className="font-cormorant font-bold text-3xl mb-4 group-hover:text-primary"
+      href={project.url}
+      aria-label={project.title}
+    >
+      {linkContent}
+    </Link>
+  );
   return (
     <div className="group grid grid-cols-6 mb-8 rounded lg hover:bg-slate-700/50  hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
       <div className="hidden md:block mr-4 col-span-0 md:col-span-2 p-4 flex items-center">
@@ -22,18 +48,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         />
       </div>
       <div className="flex flex-col col-span-6 md:col-span-4 p-4">
-        <a
-          className="font-cormorant font-bold text-3xl mb-4 group-hover:text-primary"
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={project.title}
-        >
-          <div className="flex items-center">
-            {`${project.title}`}
-            <ArrowIcon />
-          </div>
-        </a>
+        {link}
         <p className="text-gray-400 text-justify">{project.description}</p>
         <div className="flex justify-center mt-4 md:hidden">
           <Image
