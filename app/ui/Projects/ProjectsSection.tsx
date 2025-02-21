@@ -4,6 +4,14 @@ import ProjectCard from './ProjectCard';
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
+      title: 'Sliding Puzzle',
+      description:
+        'A simple puzzle game released to the App Store and Play Store.',
+      image: '/together.png',
+      technologies: ['React Native', 'Expo', 'TypeScript', 'Android', 'iOS'],
+      url: '/sliding-puzzle',
+    },
+    {
       title: 'Gastro Captain HTMX',
       description:
         'A project to explore the functionality of BunJS and HTMX. It is a meal planner application that enables users to generate a weekly meal plan based on preferred ingredients and macro nutrient goals.',
