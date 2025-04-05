@@ -31,10 +31,43 @@ export default function Page() {
         <BackToProcjectsButton />
         <h1 className="text-4xl font-bold mb-4">Logic Slide</h1>
         <p className="mb-4">
-          I wanted to build an app in React Native, to see how it developed
-          since I last used it in 2018. I have added different game modes,
-          levels, challenges, ads integration and in app purchases. The app is
-          available on the App Store and Play Store.
+          I built <b>Logic Slide</b>, a modern take on the classic 15-puzzle
+          game, to explore how far{' '}
+          <a
+            href="https://reactnative.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-tertiary"
+          >
+            React Native
+          </a>{' '}
+          has come since I last used it in 2018. This project was my deep dive
+          into <b>cross-platform mobile development</b>, and it gave me hands-on
+          experience with the latest tooling and best practices.
+        </p>
+        <p className="mb-4">
+          Along the way, I integrated features like multiple game modes
+          (Challenge & Free Play), level progression, ads, and in-app purchases.
+          I also explored <b>mobile data storage</b> using{' '}
+          <a
+            href="https://github.com/Tencent/MMKV"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-tertiary"
+          >
+            MMKV
+          </a>
+          , which offered impressive performance for persisting user data across
+          sessions.
+        </p>
+        <p className="mb-4">
+          From designing a fluid UI to handling device-specific quirks and
+          platform differences, this project helped me understand the unique
+          <b>challenges of mobile development</b>, from gesture handling to app
+          lifecycle and performance tuning.
+        </p>
+        <p className="mb-4">
+          The app is now live on both the App Store and Google Play Store.
         </p>
         <h3 className="text-2xl font-bold mt-4 mb-4">Screenshots</h3>
         <div className="flex flex-col md:flex-row items-center justify-around flex-wrap">
@@ -56,7 +89,6 @@ export default function Page() {
             </div>
           ))}
         </div>
-
         <Link href="/sliding-puzzle/privacy-policy">
           <span className="text-tertiary">Privacy policy</span>
         </Link>
