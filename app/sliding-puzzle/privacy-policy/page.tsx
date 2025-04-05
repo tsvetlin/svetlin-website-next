@@ -7,7 +7,7 @@ export default function Page() {
       <div className="max-w-5xl m-auto sm:p-6 md:p-8 lg:p-0">
         <BackToProcjectsButton />
         <h1 className="text-4xl font-bold mb-4">Privacy Policy</h1>
-        <h2 className="p-4 md:p-0 text-3xl mb-4">Effective Date: 2025.02.22</h2>
+        <h2 className="p-4 md:p-0 text-3xl mb-4">Effective Date: 2025.04.05</h2>
         <h2 className="p-4 md:p-0 text-3xl mb-4">1. Introduction</h2>
         <p className="mb-4">
           Welcome to Sliding Puzzle (&ldquo;the App&ldquo;). Your privacy is

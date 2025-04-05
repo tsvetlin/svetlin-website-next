@@ -4,10 +4,10 @@ import ProjectCard from './ProjectCard';
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
-      title: 'Sliding Puzzle',
+      title: 'Logic Slide',
       description:
         'A simple puzzle game released to the App Store and Play Store.',
-      image: '/together.png',
+      image: '/logic-slide.png',
       technologies: ['React Native', 'Expo', 'TypeScript', 'Android', 'iOS'],
       url: '/sliding-puzzle',
     },
