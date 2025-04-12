@@ -89,6 +89,17 @@ export default function Page() {
             </div>
           ))}
         </div>
+        <h3 className="text-2xl font-bold mt-4 mb-4" id="support">
+          Support
+        </h3>
+        <p className="mb-4">
+          For support please write me an e-mail: svetlin.dev at gmail.com
+        </p>
+        <p className="mb-4">
+          If you enjoy the game, please consider leaving a review on the App
+          Store or Google Play Store. Your feedback helps me improve and reach
+          more players!
+        </p>
         <Link href="/sliding-puzzle/privacy-policy">
           <span className="text-tertiary">Privacy policy</span>
         </Link>
