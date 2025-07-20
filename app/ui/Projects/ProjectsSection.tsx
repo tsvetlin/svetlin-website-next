@@ -31,7 +31,7 @@ export default function ProjectsSection() {
       title: 'Together (v1)',
       description:
         'An Android application that I developed to track how many days I have spent with my girlfriend and to remind me of important dates, anniversaries. The app had 150K+ downloads and 4.6 star rating in the Play Store, in 2018.',
-      image: '/together.png',
+      image: '/together-v1.png',
       technologies: ['Java', 'Android'],
       url: '/together-v1',
     },
