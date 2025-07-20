@@ -4,6 +4,14 @@ import ProjectCard from './ProjectCard';
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
+      title: 'Together',
+      description:
+        'A new version of the Together app, built with React Native for both Android and iOS. It features a modern design and new functionalities.',
+      image: '/together.png',
+      technologies: ['React Native', 'Expo', 'TypeScript', 'Android', 'iOS'],
+      url: '/together',
+    },
+    {
       title: 'Logic Slide',
       description:
         'A simple puzzle game released to the App Store and Play Store.',
@@ -20,12 +28,12 @@ export default function ProjectsSection() {
       url: '/gastro-captain-htmx',
     },
     {
-      title: 'Together',
+      title: 'Together (v1)',
       description:
-        'An Android application that I developed to track howw many days I have spent with my girlfriend and to remind me of important dates, anniversaries. The app had 150K+ downloads and 4.6 star rating in the Play Store, before I retired it in 2018.',
+        'An Android application that I developed to track how many days I have spent with my girlfriend and to remind me of important dates, anniversaries. The app had 150K+ downloads and 4.6 star rating in the Play Store, in 2018.',
       image: '/together.png',
       technologies: ['Java', 'Android'],
-      url: '/together',
+      url: '/together-v1',
     },
     {
       title: 'svetlin.eu (v1)',
