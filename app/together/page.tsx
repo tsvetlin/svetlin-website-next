@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
 import PageLayout from '../ui/PageLayout';
 import BackToProcjectsButton from '../ui/BackToProcjectsButton';
 
@@ -202,6 +202,9 @@ export default function Page() {
             </div>
           ))}
         </div>
+        <Link href="/together/privacy-policy">
+          <span className="text-tertiary">Privacy policy</span>
+        </Link>
       </div>
     </PageLayout>
   );
