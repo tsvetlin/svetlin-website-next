@@ -2,10 +2,12 @@
 
 ## Release checklist
 
-[] cd /home/svetlin/svetlin-website-next/
-[] su svetlin
+[] cd svetlin-website-next
+
 [] git pull
-[] exit
+
 [] npm run build
+
 [] systemctl restart nginx
-[] pm2 restart svetlin-nextjs
+
+[] pm2 restart svetlin-website-next
