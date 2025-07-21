@@ -150,17 +150,17 @@ export default function Page() {
           partner, and reminds you of important dates, anniversaries. The app is
           available for free on the App Store and Play Store.
         </p>
-        {/*<h3 className="text-2xl font-bold mt-4 mb-4">Video</h3>
+        <h3 className="text-2xl font-bold mt-4 mb-4">Demo Video</h3>
         <div className="flex justify-center mb-4">
           <iframe
-            src="https://www.youtube.com/embed/todo"
+            src="https://www.youtube.com/embed/4GF6oFE_ovg"
             title="Together App Video"
-            width="560"
-            height="315"
+            width="300"
+            height="500"
             className="rounded-lg"
             allowFullScreen
           ></iframe>
-        </div>*/}
+        </div>
         <h3 className="text-2xl font-bold mt-4 mb-4">iOS Screenshots</h3>
         <div className="flex flex-col md:flex-row items-center justify-around flex-wrap">
           {imagesIOS.map((image, index) => (
