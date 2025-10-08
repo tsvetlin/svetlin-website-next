@@ -213,9 +213,16 @@ export default function Page() {
           Store or Google Play Store. Your feedback helps me improve and reach
           more players!
         </p>
-        <Link href="/together/privacy-policy">
-          <span className="text-tertiary">Privacy policy</span>
-        </Link>
+        <p className="mb-4">
+          <Link href="/together/privacy-policy">
+            <span className="text-tertiary">Privacy Policy</span>
+          </Link>
+        </p>
+        <p>
+          <Link href="/together/terms-of-service">
+            <span className="text-tertiary">Terms of Service</span>
+          </Link>
+        </p>
       </div>
     </PageLayout>
   );
