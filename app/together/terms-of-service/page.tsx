@@ -8,7 +8,7 @@ export default function Page() {
       <div className="max-w-5xl m-auto sm:p-6 md:p-8 lg:p-0">
         <BackToProcjectsButton />
         <h1 className="text-4xl font-bold mb-4">Terms of Service</h1>
-        <h2 className="p-4 md:p-0 text-3xl mb-4">Effective Date: 2025.10.11</h2>
+        <h2 className="p-4 md:p-0 text-3xl mb-4">Effective Date: 2025.11.20</h2>
         <h2 className="p-4 md:p-0 text-3xl mb-4">
           1. Introduction and Agreement to Terms
         </h2>
@@ -211,8 +211,12 @@ export default function Page() {
           and uploaded photos or dates you choose to share.
         </p>
         <p className="mb-4">
-          We do not collect or process your location, contacts, or analytics
-          data.
+          We also collect analytics data (including screen visits, app version,
+          session length, and interaction patterns) to improve the Service and
+          user experience, as detailed in our Privacy Policy.
+        </p>
+        <p className="mb-4">
+          We do not collect or process your location or contacts.
         </p>
         <p className="mb-4">
           All data is stored securely on servers located in the European Union
@@ -276,7 +280,10 @@ export default function Page() {
             <b>Turso</b> - for the database;
           </li>
           <li className="mb-2">
-            <b>Cloudflare R2</b> - for image storage.
+            <b>Cloudflare R2</b> - for image storage;
+          </li>
+          <li className="mb-2">
+            <b>PostHog</b> - for analytics;
           </li>
         </ul>
         <p className="mb-4">

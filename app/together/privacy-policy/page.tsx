@@ -7,7 +7,7 @@ export default function Page() {
       <div className="max-w-5xl m-auto sm:p-6 md:p-8 lg:p-0">
         <BackToProcjectsButton />
         <h1 className="text-4xl font-bold mb-4">Privacy Policy</h1>
-        <h2 className="p-4 md:p-0 text-3xl mb-4">Effective Date: 2025.10.11</h2>
+        <h2 className="p-4 md:p-0 text-3xl mb-4">Effective Date: 2025.11.20</h2>
         <h2 className="p-4 md:p-0 text-3xl mb-4">1. Introduction</h2>
         <p className="mb-4">
           This Privacy Policy explains how Together (“the App,” “the Service”)
@@ -115,13 +115,25 @@ export default function Page() {
                 </td>
               </tr>
               <tr>
-                <td className="px-4 py-2 font-bold">
+                <td className="border-b border-gray-500 px-4 py-2 font-bold">
                   Technical Logs (minimal)
                 </td>
-                <td className="px-4 py-2">Timestamps, basic request logs</td>
+                <td className="border-b border-gray-500 px-4 py-2">
+                  Timestamps, basic request logs
+                </td>
+                <td className="border-b border-gray-500 px-4 py-2">
+                  For essential security and troubleshooting.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2 font-bold">Analytics Data</td>
                 <td className="px-4 py-2">
-                  For essential security and troubleshooting. No analytics or
-                  tracking beyond what is required to operate the service.
+                  Screen visits, app version, session length, feature usage
+                  events.
+                </td>
+                <td className="px-4 py-2">
+                  To analyze app usage, improve user experience, and understand
+                  feature performance.
                 </td>
               </tr>
             </tbody>
@@ -129,8 +141,51 @@ export default function Page() {
         </div>
 
         <p className="mt-4">
-          We <b>do not</b> collect location data, contact lists, advertising
-          identifiers, or analytics data.
+          We <b>do not</b> collect location data, contact lists, or advertising
+          identifiers.
+        </p>
+
+        <h2 className="p-4 md:p-0 text-3xl mb-4 mt-8">
+          3.1 Analytics and Usage Data
+        </h2>
+        <p className="mb-4">
+          To improve the App and provide a better user experience, we collect
+          analytics data using <b>PostHog</b>, a third-party analytics platform.
+        </p>
+        <p className="mb-4">The following analytics data is collected:</p>
+        <ul className="list-disc list-inside mb-4">
+          <li className="mb-2">Screen visits and navigation patterns;</li>
+          <li className="mb-2">App version information;</li>
+          <li className="mb-2">Session duration and frequency;</li>
+          <li className="mb-2">Feature interaction events.</li>
+        </ul>
+        <p className="mb-4">
+          When analytics events are sent to PostHog, only a <b>UUID</b> is
+          transmitted. This identifier allows us to track usage patterns per
+          user account without sharing directly identifiable personal
+          information (such as your name or email) with the analytics service.
+        </p>
+        <p className="mb-4">
+          <b>Legal Basis:</b> We process analytics data based on our legitimate
+          interest (Article 6(1)(f) GDPR) in improving the App&apos;s
+          performance, user experience, and understanding how features are used.
+        </p>
+        <p className="mb-4">
+          <b>Data Storage:</b> Analytics data is processed and stored by PostHog
+          on servers located within the <b>European Union</b>.
+        </p>
+        <p className="mb-4">
+          <b>Retention:</b> Analytics data is retained according to
+          PostHog&apos;s default retention policy.
+        </p>
+        <p className="mb-4">
+          <b>Opt-Out:</b> Analytics collection is a core part of our service
+          improvement process. By using the App, you consent to this analytics
+          collection. No opt-out mechanism is currently provided.
+        </p>
+        <p className="mb-4">
+          PostHog acts as a data processor on our behalf and processes analytics
+          data only according to our instructions.
         </p>
 
         <h2 className="p-4 md:p-0 text-3xl mb-4 mt-8">
@@ -139,7 +194,7 @@ export default function Page() {
         <p className="mb-4">Your data is used strictly for:</p>
         <ul className="list-disc list-inside mb-4">
           <li className="mb-2">
-            Operating and maintaining the Together App and backend;
+            Operating and maintaining the App and backend;
           </li>
           <li className="mb-2">
             Allowing account registration, login, and linking between partners;
@@ -191,7 +246,11 @@ export default function Page() {
             The database is hosted on <b>Turso;</b>
           </li>
           <li className="mb-2">
-            Uploaded photos are stored in <b>Cloudflare R2.</b>
+            Uploaded photos are stored in <b>Cloudflare R2;</b>
+          </li>
+          <li className="mb-2">
+            Analytics data is processed and stored by <b>PostHog</b> (EU
+            servers).
           </li>
         </ul>
         <p className="mb-4">
@@ -213,8 +272,13 @@ export default function Page() {
             <b>With your linked partner</b>, to enable shared couple data;
           </li>
           <li className="mb-2">
-            <b>With our hosting and storage providers</b>, solely for providing
-            the infrastructure;
+            <b>With our hosting and storage providers</b> (Aruba Cloud, Turso,
+            Cloudflare R2), solely for providing the infrastructure;
+          </li>
+          <li className="mb-2">
+            <b>With PostHog</b>, our analytics service provider, to process
+            usage data (only your backend-generated UUID and analytics events
+            are shared, not your personal information like name or email);
           </li>
           <li className="mb-2">
             <b>If required by law</b>, to comply with legal obligations or
@@ -237,6 +301,13 @@ export default function Page() {
           <li className="mb-2">
             When you <b>delete your account</b>, all personal data and uploaded
             content are <b>immediately and permanently deleted</b>.
+          </li>
+          <li className="mb-2">
+            Analytics data is retained according to{' '}
+            <b>PostHog&apos;s default retention policy</b>. Upon account
+            deletion, we request deletion of associated analytics data, though
+            PostHog may retain aggregated or anonymized data according to their
+            policies.
           </li>
           <li className="mb-2">
             Routine backups (if any) are overwritten within a short operational
