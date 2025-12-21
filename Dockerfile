@@ -1,12 +1,15 @@
 # Multi-stage Dockerfile for Next.js application
 # Supports both linux/amd64 (Intel) and linux/arm64 (Apple Silicon)
 
-FROM node:20-alpine AS base
+FROM dhi.io/node:25-alpine3.22-sfw-dev AS base
 
 # Install dependencies only when needed
 FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
+
+# Disable Socket Firewall during build (no network access for validation)
+ENV SOCKET_SECURITY=0
 
 # Copy package files
 COPY package.json package-lock.json* ./
@@ -32,8 +35,11 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
+# Security hardening
+RUN apk add --no-cache dumb-init
+
 RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+RUN adduser --system --uid 1001 --ingroup nodejs nextjs
 
 # Copy built application
 COPY --from=builder /app/public ./public
@@ -54,4 +60,6 @@ EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
+# Use dumb-init to handle signals properly and prevent zombie processes
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 CMD ["node", "server.js"]
